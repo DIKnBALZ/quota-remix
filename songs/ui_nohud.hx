@@ -1,0 +1,1 @@
+function postCreate() for (i in [healthBar, healthBarBG, iconP1, iconP2]) remove(i);

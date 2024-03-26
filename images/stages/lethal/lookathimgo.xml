@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lookathimgo.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bgdance0000" x="2" y="2" width="117" height="111" frameX="-58" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0001" x="2" y="2" width="117" height="111" frameX="-58" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0002" x="2" y="2" width="117" height="111" frameX="-58" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0003" x="135" y="2" width="116" height="111" frameX="-57" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0004" x="135" y="2" width="116" height="111" frameX="-57" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0005" x="267" y="2" width="116" height="111" frameX="-57" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0006" x="267" y="2" width="116" height="111" frameX="-57" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0007" x="399" y="2" width="117" height="111" frameX="0" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0008" x="399" y="2" width="117" height="111" frameX="0" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0009" x="2" y="129" width="116" height="111" frameX="-2" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0010" x="2" y="129" width="116" height="111" frameX="-2" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0011" x="134" y="129" width="117" height="111" frameX="-2" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0012" x="134" y="129" width="117" height="111" frameX="-2" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgdance0013" x="134" y="129" width="117" height="111" frameX="-2" frameY="0" frameWidth="175" frameHeight="111"/>
+	<SubTexture name="bgloop0000" x="267" y="129" width="109" height="116"/>
+	<SubTexture name="bgloop0001" x="267" y="129" width="109" height="116"/>
+	<SubTexture name="bgloop0002" x="267" y="129" width="109" height="116"/>
+	<SubTexture name="bgloop0003" x="392" y="129" width="109" height="116"/>
+	<SubTexture name="bgloop0004" x="392" y="129" width="109" height="116"/>
+	<SubTexture name="bgloop0005" x="392" y="129" width="109" height="116"/>
+	<SubTexture name="bgloop0006" x="2" y="261" width="109" height="116"/>
+	<SubTexture name="bgloop0007" x="2" y="261" width="109" height="116"/>
+	<SubTexture name="bgloop0008" x="2" y="261" width="109" height="116"/>
+	<SubTexture name="bgloop0009" x="127" y="261" width="109" height="116"/>
+	<SubTexture name="bgloop0010" x="127" y="261" width="109" height="116"/>
+	<SubTexture name="bgloop0011" x="127" y="261" width="109" height="116"/>
+	<SubTexture name="bgloop0012" x="252" y="261" width="109" height="116"/>
+	<SubTexture name="bgloop0013" x="252" y="261" width="109" height="116"/>
+</TextureAtlas>

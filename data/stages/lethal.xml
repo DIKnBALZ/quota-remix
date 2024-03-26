@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="1.425" name="stage" folder="stages/lethal/">
+    <!-- fuck your combo -->
+    <combo/>
+	<sprite name="sky" x="-50" y="0" sprite="sky" scroll="0.925"/>
+	<sprite name="bg" x="-50" y="0" sprite="background" scroll="0.95"/>
+
+	<girlfriend scroll="1"/>
+	<boyfriend x="460" y="-30" scroll="1"/>
+	<dad x="250" y="40" scroll="1"/>
+
+	<sprite name="table" x="0" y="581" sprite="tablefront" scroll="1"/>
+</stage>

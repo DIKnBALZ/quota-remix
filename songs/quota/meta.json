@@ -1,0 +1,8 @@
+{
+	"displayName": "Quota",
+	"bpm": 150.0,
+	"icon": "lcguy1",
+	"color": "#941653",
+	"coopAllowed": true,
+	"opponentModeAllowed": true
+}

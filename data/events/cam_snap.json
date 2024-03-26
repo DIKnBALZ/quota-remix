@@ -1,0 +1,14 @@
+{
+	"params": [
+        {
+            "name": "position!!!Try to figure out what this does i fucking dare you",
+            "type": "Bool",
+            "defaultValue": false
+        },
+        {
+            "name": "unlock?",
+            "type": "Bool",
+            "defaultValue": false
+        }
+	]
+}

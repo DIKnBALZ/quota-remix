@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character> <!-- Made with WizardMantis's Character Converter that was modified by inky lol -->
+<character isPlayer="true" x="0" y="350" icon="bf" flipX="true" camx="0" camy="0" holdTime="4" scale="1" color="#31B0D1">
+	<anim name="idle" anim="idle_ga" fps="24" loop="false" x="-65" y="10"/>
+	<anim name="singLEFT" anim="left_posegA" fps="24" loop="false" x="-14" y="-24"/>
+	<anim name="singRIGHT" anim="right_posegA" fps="24" loop="false" x="-124" y="-7"/>
+	<anim name="singDOWN" anim="down_posegA" fps="24" loop="false" x="-60" y="-11"/>
+	<anim name="singUP" anim="up_posegA" fps="24" loop="false" x="-72" y="51"/>
+	<anim name="singLEFTmiss" anim="left_missgA" fps="24" loop="false" x="-86" y="-3"/>
+	<anim name="singDOWNmiss" anim="down_missgA" fps="24" loop="false" x="-145" y="21"/>
+	<anim name="singUPmiss" anim="up_missgA" fps="24" loop="false" x="-136" y="37"/>
+	<anim name="singRIGHTmiss" anim="right_missgA" fps="24" loop="false" x="-175" y="3"/>
+</character>

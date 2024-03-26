@@ -1,0 +1,14 @@
+{
+	"params": [
+		{
+			"name": "who's ringin' it",
+			"type": "StrumLine",
+			"defaultValue": 0
+		},
+        {
+            "name": "okay but who",
+            "type": "String",
+            "defaultValue": "-1"
+        }
+	]
+}
