@@ -33,11 +33,8 @@ function update(e) blend.alpha = (FlxG.camera._fxFadeAlpha == 0 && FlxG.camera._
 
 function onEvent(e) {
 	if (e.event.name == "jeb_please_listen_to_our_heeds") { // the name might be inconvenient but its an inside joke so maybe screw You..?????
-		bell.playAnim("click", true);
-		if (e.event.params[1] != -1)
-			strumLines.members[e.event.params[0]].characters[e.event.params[1]].playAnim("ding", true);
-		else for (char in strumLines.members[e.event.params[0]].characters)
-			char.playAnim("ding", true);
+		if (!PlayState.opponentMode && !PlayState.coopMode)
+			ding(e.event.params[0], e.event.params[1]);
 	} else if (e.event.name == "look_at_him_go") horndude.playAnim(e.event.params[0] ? "left" : "idle", false);
 	else if (e.event.name == "cam_snap") {
 		if (!e.event.params[1]) {
@@ -54,6 +51,30 @@ function onEvent(e) {
 	}
 }
 
-function onNoteHit(event)
-	if (event.note.strumLine.characters[0].getAnimName() == "ding" && event.note.strumLine.characters[0].animation.curAnim.finished == false)
+function onPostNoteCreation(e) {
+	if (e.note.noteType == "Ding" && strumLines.members[e.strumLineID].cpu) {
+		e.note.visible = false;
+	}
+}
+
+function onNoteHit(event) {
+	if (event.note.strumLine.characters[0].getAnimName() == "ding" && event.note.strumLine.characters[0].animation.curAnim.finished == false) {
 		event.cancelAnim();
+	}
+
+	if (event.note.noteType == "Ding") {
+		event.cancelAnim();
+		event.cancelStrumGlow();
+		if (!event.note.strumLine.cpu)
+			ding(strumLines.members.indexOf(event.note.strumLine), event.note.strumLine.characters.indexOf(event.character));
+	}
+}
+
+function ding(sLIndex:Int, charIndex:Int) {
+	bell.playAnim("click", true);
+	vocals.volume = 1;
+	if (charIndex != -1)
+		strumLines.members[sLIndex].characters[charIndex].playAnim("ding", true);
+	else for (char in strumLines.members[sLIndex].characters)
+		char.playAnim("ding", true);
+}
