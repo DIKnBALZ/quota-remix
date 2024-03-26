@@ -64,9 +64,11 @@ function onNoteHit(event) {
 
 	if (event.note.noteType == "Ding") {
 		event.cancelAnim();
-		event.cancelStrumGlow();
-		if (!event.note.strumLine.cpu)
-			ding(strumLines.members.indexOf(event.note.strumLine), event.note.strumLine.characters.indexOf(event.character));
+		if (event.note.strumLine.cpu) {
+			event.cancelStrumGlow();
+			return;
+		}
+		ding(strumLines.members.indexOf(event.note.strumLine), event.note.strumLine.characters.indexOf(event.character));
 	}
 }
 

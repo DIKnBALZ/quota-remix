@@ -1,6 +1,7 @@
 /// shut up vsc
 
 import hxvlc.flixel.FlxVideoSprite;
+import funkin.backend.MusicBeatState;
 
 /// FUCK YOU BLEND
 var _hate:FunkinSprite;
@@ -16,13 +17,15 @@ function postCreate() {
 	_hate.scrollFactor.set(); _hate.zoomFactor = 0;
 	add(_hate);
 
-	_endVideo = new FlxVideoSprite(-480,0);
+	_endVideo = new FlxVideoSprite(-480,downscroll ? -350 : 0);
 	_endVideo.load(Assets.getPath(Paths.video('end')));
 	_endVideo.antialiasing = true;
 	_endVideo.cameras = [camHUD];
 	add(_endVideo);
 	FlxG.signals.focusGained.remove(_endVideo.resume);
 	FlxG.signals.focusLost.remove(_endVideo.pause);
+
+	MusicBeatState.skipTransOut = true;
 }
 
 function onPostCountdown(event) {
