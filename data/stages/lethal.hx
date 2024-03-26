@@ -69,7 +69,7 @@ function onNoteHit(event) {
 			return;
 		}
 		ding(strumLines.members.indexOf(event.note.strumLine), event.note.strumLine.characters.indexOf(event.character));
-	}
+	} else if (event.note.noteType == "No Animation") event.cancelAnim();
 }
 
 function ding(sLIndex:Int, charIndex:Int) {
