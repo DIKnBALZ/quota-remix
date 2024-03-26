@@ -1,4 +1,5 @@
 import openfl.system.Capabilities;
+import hxvlc.util.Handle;
 
 function new() {
     FlxG.width = FlxG.initialWidth = 960;
@@ -8,6 +9,8 @@ function new() {
 
 	window.x = (Capabilities.screenResolutionX / 2) - (window.width / 2);
 	window.y = (Capabilities.screenResolutionY / 2) - (window.height / 2);
+
+    Handle.initAsync([]);
 }
 
 function postStateSwitch() window.title = "LETHAL LOGS";
