@@ -17,12 +17,7 @@ function postCreate() {
 	add(bell);
 	bell.x = table.x + (table.width - bell.width)/2;
 	bell.y = table.y -20;
-	bell.animation.finishCallback = (anim:String) -> {
-		if (anim == 'click') {
-			dad.stunned = false;
-			bell.animation.play('idle');
-		}
-	}
+	bell.animation.finishCallback = (anim:String) -> {if (anim == 'click') bell.animation.play('idle');}
 
 	blend = new FunkinSprite().loadGraphic(Paths.image('stages/lethal/gradient'));
 	blend.blend = 0;
@@ -32,16 +27,10 @@ function postCreate() {
 function update(e) blend.alpha = (FlxG.camera._fxFadeAlpha == 0 && FlxG.camera._fxFadeAlpha == 0);
 
 function onEvent(e) {
-	if (e.event.name == "jeb_please_listen_to_our_heeds") { // the name might be inconvenient but its an inside joke so maybe screw You..?????
-		if (!PlayState.opponentMode && !PlayState.coopMode)
-			ding(e.event.params[0], e.event.params[1]);
-	} else if (e.event.name == "look_at_him_go") horndude.playAnim(e.event.params[0] ? "left" : "idle", false);
+	if (e.event.name == "look_at_him_go") horndude.playAnim(e.event.params[0] ? "left" : "idle", false);
 	else if (e.event.name == "cam_snap") {
 		if (!e.event.params[1]) {
-			camera.lock(
-				!e.event.params[0] ? stage.getSprite("sky").getGraphicMidpoint().x + 50 - 100 : stage.getSprite("sky").getGraphicMidpoint().x + 50 + 100,
-				stage.getSprite("sky").getGraphicMidpoint().y + 200 - 50, true
-			);
+			camera.lock(!e.event.params[0] ? stage.getSprite("sky").getGraphicMidpoint().x + 50 - 100 : stage.getSprite("sky").getGraphicMidpoint().x + 50 + 100, stage.getSprite("sky").getGraphicMidpoint().y + 200 - 50, true);
 			camGame.zoom = defaultCamZoom = 2.5;
 		} else {
 			camera.unlock();
@@ -51,23 +40,14 @@ function onEvent(e) {
 	}
 }
 
-function onPostNoteCreation(e) {
-	if (e.note.noteType == "Ding" && strumLines.members[e.strumLineID].cpu) {
-		e.note.visible = false;
-	}
-}
+function onPostNoteCreation(e) if (e.note.noteType == "Ding" && strumLines.members[e.strumLineID].cpu) e.note.visible = false; // craziest one liner
 
 function onNoteHit(event) {
-	if (event.note.strumLine.characters[0].getAnimName() == "ding" && event.note.strumLine.characters[0].animation.curAnim.finished == false) {
-		event.cancelAnim();
-	}
+	if (event.note.strumLine.characters[0].getAnimName() == "ding" && event.note.strumLine.characters[0].animation.curAnim.finished == false) event.cancelAnim();
 
-	if (event.note.noteType == "Ding") {
+	if (event.note.noteType == "Ding" || event.note.noteType == "Visible Ding") {
 		event.cancelAnim();
-		if (event.note.strumLine.cpu) {
-			event.cancelStrumGlow();
-			return;
-		}
+		if (event.note.strumLine.cpu && event.note.noteType != "Visible Ding") event.cancelStrumGlow();
 		ding(strumLines.members.indexOf(event.note.strumLine), event.note.strumLine.characters.indexOf(event.character));
 	} else if (event.note.noteType == "No Animation") event.cancelAnim();
 }
@@ -75,8 +55,6 @@ function onNoteHit(event) {
 function ding(sLIndex:Int, charIndex:Int) {
 	bell.playAnim("click", true);
 	vocals.volume = 1;
-	if (charIndex != -1)
-		strumLines.members[sLIndex].characters[charIndex].playAnim("ding", true);
-	else for (char in strumLines.members[sLIndex].characters)
-		char.playAnim("ding", true);
+	if (charIndex != -1) strumLines.members[sLIndex].characters[charIndex].playAnim("ding", true);
+	else for (char in strumLines.members[sLIndex].characters) char.playAnim("ding", true);
 }
