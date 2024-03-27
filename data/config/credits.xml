@@ -1,0 +1,10 @@
+<!DOCTYPE codename-mod-credits>
+<!-- TEMPLATE FOR CUSTOM CREDITS!!! -->
+<menu name="Lethal Logs" desc="the peopel that made the thing">
+	<!-- \/ You can also set the portrait shader as false as you can see below in the github one -->
+	<credit name="Penkaru" desc="Composer" icon="credit icon example" size="130"/>
+	<credit name="DegoDraws" desc="Artist" icon="credit icon example" size="130"/>
+	<credit name="River" desc="Chromatics" icon="credit icon example" size="130"/>
+	<credit name="Bunger" desc="Charter" icon="credit icon example" size="130"/>
+	<credit name="Data" desc="Coder" icon="credit icon example" size="130"/>
+</menu>

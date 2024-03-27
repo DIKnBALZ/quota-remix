@@ -38,20 +38,22 @@ function load(optTxt:String) { // for convenience
 }
 
 function update(e) {
-	if (![-1, 8, 32, 13, 55, 27, 18, 16, 17, 20].contains(FlxG.keys.firstJustPressed())) _realInput += FlxKey.toStringMap.get(FlxG.keys.firstJustPressed());
-	else if (FlxG.keys.justPressed.BACKSPACE) _realInput = _realInput.substring(0, _realInput.length-1);
+	if (![-1, 8, 32, 13, 55, 27, 18, 16, 17, 20, 189, 107, 187, 109].contains(FlxG.keys.firstJustPressed())) _realInput += FlxKey.toStringMap.get(FlxG.keys.firstJustPressed());
+	else if (FlxG.keys.justPressed.BACKSPACE) _realInput = _realInput.substring(0, FlxG.keys.pressed.CONTROL ? _realInput.lastIndexOf(" ") == -1 ? 0 : _realInput.lastIndexOf(" ") : _realInput.length-1);
 	else if (FlxG.keys.justPressed.SPACE) _realInput += " ";
 	else if (FlxG.keys.justPressed.ENTER) {
 		if (!_onPlayScreen) switch _realInput.substring(0, 3).toLowerCase() {
 			default: trace(_realInput.substring(0,3) + "???");
 			case "pla":
 				_onPlayScreen = true;
-				load("//PLAY//\n--------------------------------\n* SOLO (S)\n* OPPONENT MODE (O)\n* CO-OP MODE (C)");
+				load("//PLAY// (ESCAPE TO GO BACK)\n--------------------------------\n* SOLO (S)\n* OPPONENT MODE (O)\n* CO-OP MODE (C)");
 			case "opt": FlxG.switchState(new OptionsMenu());
 			case "cre": FlxG.switchState(new CreditsMain());
 			case "mod":
 				persistentUpdate = false;
 				openSubState(new ModSwitchMenu());
+			case "ref": // refresh
+				FlxG.switchState(new ModState("MainMenu"));
 		} else switch _realInput.substring(0, 1).toLowerCase() {
 			default: trace(_realInput.substring(0,1) + "???");
 			case "s": play();
