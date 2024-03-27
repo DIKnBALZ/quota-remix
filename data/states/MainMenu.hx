@@ -35,6 +35,21 @@ function load(optTxt:String) { // for convenience
 	optionsText.text = optTxt;
 	inputText.y = optionsText.y + optionsText.height;
 	_realInput = "";
+	_count = 0;
+}
+
+var _count:Int = 0;
+function what() { // unrecognized input
+	_count ++;
+	if (_count != 6) { // dont let the input text go offscreen
+		var _unrecognizedCommand:String = "\nUNRECOGNIZED COMMAND";
+		optionsText.text += _unrecognizedCommand;
+	} else {
+		optionsText.text = optionsText.text.substring(0, optionsText.text.indexOf("\nUNRECOGNIZED COMMAND")) + "\nUNRECOGNIZED COMMAND";
+		_count = 1;
+	}
+	inputText.y = optionsText.y + optionsText.height;
+	_realInput = "";
 }
 
 function update(e) {
@@ -43,10 +58,10 @@ function update(e) {
 	else if (FlxG.keys.justPressed.SPACE) _realInput += " ";
 	else if (FlxG.keys.justPressed.ENTER) {
 		if (!_onPlayScreen) switch _realInput.substring(0, 3).toLowerCase() {
-			default: trace(_realInput.substring(0,3) + "???");
+			default: what();
 			case "pla":
 				_onPlayScreen = true;
-				load("//PLAY// (ESCAPE TO GO BACK)\n--------------------------------\n* SOLO (S)\n* OPPONENT MODE (O)\n* CO-OP MODE (C)");
+				load("//PLAY// (ESCAPE TO GO BACK)\n--------------------------------\n* SOLO\n* OPPONENT MODE\n* CO-OP MODE	");
 			case "opt": FlxG.switchState(new OptionsMenu());
 			case "cre": FlxG.switchState(new CreditsMain());
 			case "mod":
@@ -54,11 +69,17 @@ function update(e) {
 				openSubState(new ModSwitchMenu());
 			case "ref": // refresh
 				FlxG.switchState(new ModState("MainMenu"));
-		} else switch _realInput.substring(0, 1).toLowerCase() {
-			default: trace(_realInput.substring(0,1) + "???");
-			case "s": play();
-			case "o": play(true);
-			case "c": play(false, true);
+			case "cle": // clear
+				load("//MENU//\n--------------------------------\n* PLAY\n* OPTIONS\n* CREDITS\n* MODS");
+		} else switch _realInput.substring(0, 2).toLowerCase() {
+			default: what();
+			case "so": play();
+			case "op": play(true);
+			case "co": play(false, true);
+			case "re": // refresh
+				FlxG.switchState(new ModState("MainMenu"));
+			case "cl": // clear
+				load("//PLAY// (ESCAPE TO GO BACK)\n--------------------------------\n* SOLO\n* OPPONENT MODE\n* CO-OP MODE	");
 		}
 	} else if (FlxG.keys.justPressed.SEVEN) {
 		persistentUpdate = false;
