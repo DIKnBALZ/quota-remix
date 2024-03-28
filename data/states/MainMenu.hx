@@ -103,7 +103,6 @@ function what() { // unrecognized input
 }
 
 function update(e) {
-	if (FlxG.keys.justPressed.EIGHT) FlxG.switchState(new ModState());
 	if (![-1, 8, 32, 13, 55, 27, 18, 16, 17, 20, 189, 107, 187, 109, 96, 48].contains(FlxG.keys.firstJustPressed())) _realInput += FlxKey.toStringMap.get(FlxG.keys.firstJustPressed());
 	else if (FlxG.keys.justPressed.BACKSPACE) _realInput = _realInput.substring(0, FlxG.keys.pressed.CONTROL ? _realInput.lastIndexOf(" ") == -1 ? 0 : _realInput.lastIndexOf(" ") : _realInput.length-1);
 	else if (FlxG.keys.justPressed.SPACE) _realInput += " ";
