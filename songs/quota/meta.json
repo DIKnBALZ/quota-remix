@@ -4,5 +4,6 @@
 	"icon": "lcguy1",
 	"color": "#941653",
 	"coopAllowed": true,
-	"opponentModeAllowed": true
+	"opponentModeAllowed": true,
+	"needsVoices": false
 }

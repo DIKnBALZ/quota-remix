@@ -1,5 +1,4 @@
 import openfl.system.Capabilities;
-import hxvlc.util.Handle;
 import funkin.menus.BetaWarningState;
 
 function new() {
@@ -9,8 +8,6 @@ function new() {
 
 	window.x = (Capabilities.screenResolutionX / 2) - (window.width / 2);
 	window.y = (Capabilities.screenResolutionY / 2) - (window.height / 2);
-
-	Handle.initAsync([]);
 }
 
 var _redirectStates:Map<FlxState, String> = [

@@ -1,11 +1,9 @@
 /// shut up vsc
 
-import hxvlc.flixel.FlxVideoSprite;
 import funkin.backend.MusicBeatState;
 
 /// FUCK YOU BLEND
 var _hate:FunkinSprite;
-var _endVideo:FlxVideoSprite;
 function postCreate() {
 	boyfriend.alpha = 0;
 	dad.alpha = 0;
@@ -16,14 +14,6 @@ function postCreate() {
 	_hate = new FunkinSprite().makeSolid(FlxG.width, FlxG.height, 0xFF000000);
 	_hate.scrollFactor.set(); _hate.zoomFactor = 0;
 	add(_hate);
-
-	_endVideo = new FlxVideoSprite(-480,downscroll ? -350 : 0);
-	_endVideo.load(Assets.getPath(Paths.video('end')));
-	_endVideo.antialiasing = true;
-	_endVideo.cameras = [camHUD];
-	add(_endVideo);
-	FlxG.signals.focusGained.remove(_endVideo.resume);
-	FlxG.signals.focusLost.remove(_endVideo.pause);
 
 	MusicBeatState.skipTransOut = true;
 }
@@ -56,13 +46,7 @@ function onSongStart() {
 function beatHit(b) {
 	if (b == 28) FlxTween.tween(camHUD,{alpha: 1},0.7,{ease: FlxEase.sineInOut});
 	if (b == 332) {
-		_endVideo.play();
-		accuracyTxt.visible = missesTxt.visible = scoreTxt.visible = false;
+		// _endVideo.play();
+		// accuracyTxt.visible = missesTxt.visible = scoreTxt.visible = false;
 	}
 }
-
-function postUpdate()
-	if (!paused) _endVideo.resume();
-
-function onGamePause()
-	_endVideo.pause();
