@@ -4,236 +4,242 @@
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 0
+			"time": 0,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 3200
+			"time": 3200,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 6400
+			"time": 6400,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				false,
 				false
 			],
-			"name": "cam_snap",
-			"time": 6400
+			"time": 6400,
+			"name": "cam_snap"
 		},
 		{
 			"params": [
 				true
 			],
-			"name": "look_at_him_go",
-			"time": 6800
+			"time": 6800,
+			"name": "look_at_her_go"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 9600
+			"time": 9600,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				true,
 				false
 			],
-			"name": "cam_snap",
-			"time": 9600
+			"time": 9600,
+			"name": "cam_snap"
 		},
 		{
 			"params": [
 				false,
 				false
 			],
-			"name": "cam_snap",
-			"time": 11200
+			"time": 11200,
+			"name": "cam_snap"
 		},
 		{
 			"params": [
 				false
 			],
-			"time": 12800,
-			"name": "look_at_him_go"
-		},
-		{
-			"params": [
-				false,
-				true
-			],
-			"name": "cam_snap",
+			"name": "look_at_her_go",
 			"time": 12800
 		},
 		{
 			"params": [
-				1
+				false,
+				true
 			],
-			"name": "Camera Movement",
-			"time": 19200
-		},
-		{
-			"params": [
-				0
-			],
-			"name": "Camera Movement",
-			"time": 25600
+			"time": 12800,
+			"name": "cam_snap"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 28800
+			"time": 19200,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 38400
+			"time": 25600,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				1
+			],
+			"time": 28800,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				0
+			],
+			"time": 38400,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				true
 			],
-			"name": "look_at_him_go",
-			"time": 39600
+			"time": 39600,
+			"name": "look_at_her_go"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 44800
+			"time": 44800,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 51200
+			"time": 51200,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				false
 			],
-			"name": "look_at_him_go",
-			"time": 51200
+			"time": 51200,
+			"name": "look_at_her_go"
 		},
 		{
 			"params": [
 				true
 			],
-			"time": 52400,
-			"name": "look_at_him_go"
+			"name": "look_at_her_go",
+			"time": 52400
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 57600
+			"time": 57600,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				false
 			],
-			"time": 64000,
-			"name": "look_at_him_go"
+			"name": "look_at_her_go",
+			"time": 64000
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 65600
+			"time": 65600,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 72000
+			"time": 72000,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 78400
+			"time": 78400,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 81600
+			"time": 81600,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 84800
+			"time": 84800,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 86400
+			"time": 86400,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				175
 			],
-			"name": "BPM Change",
-			"time": 91200
+			"time": 91200,
+			"name": "BPM Change"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 102171.428571429
+			"time": 102171.428571429,
+			"name": "Camera Movement"
+		},
+		{
+			"params": [
+				true
+			],
+			"name": "look_at_her_go",
+			"time": 112800
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 113142.857142857
+			"time": 113142.857142857,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				0
 			],
-			"name": "Camera Movement",
-			"time": 124114.285714286
+			"time": 124114.285714286,
+			"name": "Camera Movement"
 		},
 		{
 			"params": [
 				1
 			],
-			"name": "Camera Movement",
-			"time": 125485.714285714
+			"time": 125485.714285714,
+			"name": "Camera Movement"
 		}
 	],
 	"scrollSpeed": 2.5,
+	"codenameChart": true,
 	"strumLines": [
 		{
-			"strumScale": 1,
-			"position": "dad",
 			"notes": [
 				{
 					"id": 1,
@@ -377,7 +383,7 @@
 					"id": 2,
 					"sLen": 0,
 					"time": 25600,
-					"type": 3
+					"type": 2
 				},
 				{
 					"id": 0,
@@ -455,19 +461,19 @@
 					"id": 1,
 					"sLen": 0,
 					"time": 32000,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 38000,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
 					"sLen": 0,
 					"time": 38400,
-					"type": 1
+					"type": 2
 				},
 				{
 					"id": 1,
@@ -743,7 +749,7 @@
 					"id": 1,
 					"sLen": 0,
 					"time": 60800,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
@@ -821,13 +827,13 @@
 					"id": 1,
 					"sLen": 0,
 					"time": 64400,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 64800,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
@@ -983,7 +989,7 @@
 					"id": 1,
 					"sLen": 0,
 					"time": 77800,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
@@ -1085,301 +1091,301 @@
 					"id": 1,
 					"sLen": 0,
 					"time": 90000,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 90400,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 90800,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 101828.571428571,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
 					"sLen": 0,
 					"time": 102000,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 102171.428571429,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 102514.285714286,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 102857.142857143,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 103200,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 103371.428571429,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
 					"sLen": 0,
 					"time": 103542.857142857,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 103714.285714286,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 103885.714285714,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 104057.142857143,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
 					"sLen": 0,
 					"time": 104228.571428571,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 104571.428571429,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 104742.857142857,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 104914.285714286,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 105085.714285714,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 105257.142857143,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 105428.571428571,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 105600,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 105942.857142857,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 106114.285714286,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
 					"sLen": 0,
 					"time": 106285.714285714,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 106457.142857143,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
 					"sLen": 0,
 					"time": 106628.571428571,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 106800,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 106971.428571429,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 107314.285714286,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 107485.714285714,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 107657.142857143,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 108000,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 108342.857142857,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 108685.714285714,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
 					"sLen": 0,
 					"time": 108857.142857143,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 109028.571428571,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
 					"sLen": 0,
 					"time": 109200,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 109371.428571429,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 109542.857142857,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 109714.285714286,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 110057.142857143,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
 					"sLen": 0,
 					"time": 110228.571428571,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 110400,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 111085.714285714,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 111771.428571429,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 0,
 					"sLen": 0,
 					"time": 118971.428571429,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
 					"sLen": 0,
 					"time": 119657.142857143,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 2,
 					"sLen": 0,
 					"time": 120342.857142857,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 3,
 					"sLen": 0,
 					"time": 121028.571428571,
-					"type": 2
+					"type": 1
 				},
 				{
 					"id": 1,
@@ -1460,21 +1466,21 @@
 					"type": 0
 				}
 			],
-			"characters": [
-				"lc2"
-			],
-			"type": 0,
+			"position": "dad",
+			"strumScale": 1,
 			"visible": true,
+			"type": 0,
+			"characters": [
+				"quota-myo"
+			],
 			"strumPos": [
 				0,
 				50
 			],
-			"vocalsSuffix": "-myo",
-			"strumLinePos": 0.25
+			"strumLinePos": 0.25,
+			"vocalsSuffix": "-myo"
 		},
 		{
-			"strumScale": 1,
-			"position": "boyfriend",
 			"notes": [
 				{
 					"id": 3,
@@ -3061,6 +3067,12 @@
 					"type": 0
 				},
 				{
+					"id": 0,
+					"sLen": 0,
+					"time": 125314.285714286,
+					"type": 0
+				},
+				{
 					"id": 2,
 					"sLen": 0,
 					"time": 125485.714285714,
@@ -3079,23 +3091,23 @@
 					"type": 0
 				}
 			],
+			"position": "boyfriend",
+			"strumScale": 1,
+			"visible": true,
+			"type": 1,
 			"characters": [
 				"lcguy1"
 			],
-			"type": 1,
-			"visible": true,
 			"strumPos": [
 				0,
 				50
 			],
-			"vocalsSuffix": "-wiz",
-			"strumLinePos": 0.75
+			"strumLinePos": 0.75,
+			"vocalsSuffix": "-wiz"
 		}
 	],
-	"codenameChart": true,
 	"stage": "lethal",
 	"noteTypes": [
-		"No Animation",
 		"Ding",
 		"Visible Ding"
 	]

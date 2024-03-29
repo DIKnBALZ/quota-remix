@@ -1,9 +1,0 @@
-{
-	"params": [
-        {
-            "name": "hi :3c",
-            "type": "Bool",
-            "defaultValue": true
-        }
-	]
-}

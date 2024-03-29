@@ -72,6 +72,46 @@ function create() {
 					persistentUpdate = false;
 					openSubState(new ModSwitchMenu());
 				}
+			}, {
+				text: "LAYS",
+				callback: () -> {
+					var spr:FunkinSprite = new FunkinSprite().loadGraphic(Paths.image("chips"));
+					spr.setGraphicSize(FlxG.width, FlxG.height);
+					spr.updateHitbox();
+					add(spr);
+				}
+			}, {
+				text: "YEAH WOO",
+				callback: () -> {
+					var menu:MenuData = new MenuData();
+					menu.data = {
+						title: "YEAH WOO",
+						letterMin: 3,
+						options: [
+							{
+								text: "YAY",
+								callback: () -> {
+									var a:MenuData = new MenuData();
+									a.data = {
+										title: "YAY",
+										letterMin: 3,
+										options: []
+									};
+									load(a, true);
+								}
+							}
+						]
+					};
+					load(menu, true);
+				}
+			}, {
+				text: "DUDE",
+				callback: () -> {
+					var spr:FunkinSprite = new FunkinSprite().loadGraphic(Paths.image("dude"));
+					spr.setGraphicSize(FlxG.width, FlxG.height);
+					spr.updateHitbox();
+					add(spr);
+				}
 			}
 		]
 	};

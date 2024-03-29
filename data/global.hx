@@ -7,7 +7,6 @@ function new() {
 	for (camera in FlxG.cameras.list) camera.setSize(FlxG.width, FlxG.height);
 
 	window.x = (Capabilities.screenResolutionX / 2) - (window.width / 2);
-	window.y = (Capabilities.screenResolutionY / 2) - (window.height / 2);
 }
 
 var _redirectStates:Map<FlxState, String> = [
@@ -25,5 +24,4 @@ function destroy() {
 	for (camera in FlxG.cameras.list) camera.setSize(FlxG.width, FlxG.height);
 
 	window.x = (Capabilities.screenResolutionX / 2) - (window.width / 2);
-	window.y = (Capabilities.screenResolutionY / 2) - (window.height / 2);
 }

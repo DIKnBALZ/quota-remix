@@ -17,17 +17,24 @@ function postCreate() {
 	add(bell);
 	bell.x = table.x + (table.width - bell.width)/2;
 	bell.y = table.y -20;
-	bell.animation.finishCallback = (anim:String) -> {if (anim == 'click') bell.animation.play('idle');}
+	bell.animation.finishCallback = (anim:String) -> {
+		if (anim == 'click') {
+			bell.animation.play('idle');
+			for (char in _stunned) char.stunned = false;
+		}
+	}
 
 	blend = new FunkinSprite().loadGraphic(Paths.image('stages/lethal/gradient'));
 	blend.blend = 0;
 	add(blend);
+
+	canDie = canDadDie = false;
 }
 
 function update(e) blend.alpha = (FlxG.camera._fxFadeAlpha == 0 && FlxG.camera._fxFadeAlpha == 0);
 
 function onEvent(e) {
-	if (e.event.name == "look_at_him_go") horndude.playAnim(e.event.params[0] ? "left" : "idle", false);
+	if (e.event.name == "look_at_her_go") horndude.playAnim(e.event.params[0] ? "left" : "idle", false);
 	else if (e.event.name == "cam_snap") {
 		if (!e.event.params[1]) {
 			camera.lock(!e.event.params[0] ? stage.getSprite("sky").getGraphicMidpoint().x + 50 - 100 : stage.getSprite("sky").getGraphicMidpoint().x + 50 + 100, stage.getSprite("sky").getGraphicMidpoint().y + 200 - 50, true);
@@ -43,18 +50,29 @@ function onEvent(e) {
 function onPostNoteCreation(e) if (e.note.noteType == "Ding" && strumLines.members[e.strumLineID].cpu) e.note.visible = false; // craziest one liner
 
 function onNoteHit(event) {
-	if (event.note.strumLine.characters[0].getAnimName() == "ding" && event.note.strumLine.characters[0].animation.curAnim.finished == false) event.cancelAnim();
-
-	if (event.note.noteType == "Ding" || event.note.noteType == "Visible Ding") {
+	if (event.noteType == "Ding" || event.noteType == "Visible Ding") {
 		event.cancelAnim();
-		if (event.note.strumLine.cpu && event.note.noteType != "Visible Ding") event.cancelStrumGlow();
+		if (event.note.strumLine.cpu && event.noteType != "Visible Ding") event.cancelStrumGlow();
 		ding(strumLines.members.indexOf(event.note.strumLine), event.note.strumLine.characters.indexOf(event.character));
-	} else if (event.note.noteType == "No Animation") event.cancelAnim();
+	}
 }
 
+function onPlayerMiss(e) {
+	if (e.noteType == "Ding" || e.noteType == "Visible Ding") {
+		e.cancelAnim();
+		e.character.playAnim("dingmiss", true, "MISS");
+	}
+}
+
+var _stunned:Array<Character> = [];
 function ding(sLIndex:Int, charIndex:Int) {
 	bell.playAnim("click", true);
-	vocals.volume = 1;
-	if (charIndex != -1) strumLines.members[sLIndex].characters[charIndex].playAnim("ding", true);
-	else for (char in strumLines.members[sLIndex].characters) char.playAnim("ding", true);
+	if (charIndex != -1) {
+		strumLines.members[sLIndex].characters[charIndex].playAnim("ding", true);
+		strumLines.members[sLIndex].characters[charIndex].stunned = true;
+		_stunned = [strumLines.members[sLIndex].characters[charIndex]];
+	} else for (char in strumLines.members[sLIndex].characters) {
+		char.playAnim("ding", true);
+		char.stunned = true; _stunned.push(char);
+	};
 }
