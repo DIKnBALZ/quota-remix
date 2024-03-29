@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character x="35" holdTime="4" icon="bf" y="375" color="#31B0D1" isPlayer="true" flipX="true">
+	<anim x="-65" loop="false" y="10" fps="18" anim="idle" name="idle"/>
+	<anim x="-14" loop="false" y="7" fps="18" anim="left" name="singLEFT"/>
+	<anim x="-107" loop="false" y="9" fps="18" anim="right" name="singRIGHT"/>
+	<anim x="-68" loop="false" y="-16" fps="18" anim="down" name="singDOWN"/>
+	<anim x="-75" loop="false" y="33" fps="18" anim="up" name="singUP"/>
+	<anim x="-13" loop="false" y="8" fps="18" anim="missleft" name="singLEFTmiss"/>
+	<anim x="-62" loop="false" y="-18" fps="18" anim="missdown" name="singDOWNmiss"/>
+	<anim x="-81" loop="false" y="33" fps="18" anim="missup" name="singUPmiss"/>
+	<anim x="-116" loop="false" y="9" fps="18" anim="missright" name="singRIGHTmiss"/>
+</character>

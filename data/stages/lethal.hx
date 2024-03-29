@@ -1,12 +1,12 @@
 // shut up vsc
 function postCreate() {
-	horndude = new FunkinSprite(bg.getGraphicMidpoint().x-50,bg.getGraphicMidpoint().y);
-	horndude.frames = Paths.getFrames("stages/lethal/lookathimgo");
-	horndude.animation.addByPrefix('left','bgdance',24);
-	horndude.animation.addByPrefix('idle','bgloop',24); 
-	horndude.animation.play('idle');
-	horndude.antialiasing = true;
-	insert(4, horndude);
+	horngirl = new FunkinSprite(bg.getGraphicMidpoint().x-50,bg.getGraphicMidpoint().y);
+	horngirl.frames = Paths.getFrames("stages/lethal/lookathergo");
+	horngirl.animation.addByPrefix('left','holyshit',18);
+	horngirl.animation.addByPrefix('idle','idle',18);
+	horngirl.animation.play('idle');
+	horngirl.antialiasing = true;
+	insert(4, horngirl);
 
 	bell = new FunkinSprite();
 	bell.frames = Paths.getFrames("stages/lethal/bell");
@@ -34,7 +34,7 @@ function postCreate() {
 function update(e) blend.alpha = (FlxG.camera._fxFadeAlpha == 0 && FlxG.camera._fxFadeAlpha == 0);
 
 function onEvent(e) {
-	if (e.event.name == "look_at_her_go") horndude.playAnim(e.event.params[0] ? "left" : "idle", false);
+	if (e.event.name == "look_at_her_go") horngirl.playAnim(e.event.params[0] ? "left" : "idle", false);
 	else if (e.event.name == "cam_snap") {
 		if (!e.event.params[1]) {
 			camera.lock(!e.event.params[0] ? stage.getSprite("sky").getGraphicMidpoint().x + 50 - 100 : stage.getSprite("sky").getGraphicMidpoint().x + 50 + 100, stage.getSprite("sky").getGraphicMidpoint().y + 200 - 50, true);

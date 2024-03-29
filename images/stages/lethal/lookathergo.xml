@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="quota-druzie.png" width="1088" height="129">
+	<SubTexture name="holyshit0001" x="382" y="1" width="116" height="127" frameX="-0" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0002" x="382" y="1" width="116" height="127" frameX="-0" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0003" x="501" y="1" width="114" height="127" frameX="-2" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0004" x="501" y="1" width="114" height="127" frameX="-2" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0005" x="618" y="1" width="114" height="127" frameX="-2" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0006" x="618" y="1" width="114" height="127" frameX="-2" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0007" x="618" y="1" width="114" height="127" frameX="-2" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0008" x="618" y="1" width="114" height="127" frameX="-2" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0009" x="735" y="1" width="116" height="127" frameX="-51" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0010" x="735" y="1" width="116" height="127" frameX="-51" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0011" x="854" y="1" width="115" height="127" frameX="-50" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0012" x="854" y="1" width="115" height="127" frameX="-50" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0013" x="972" y="1" width="115" height="127" frameX="-50" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0014" x="972" y="1" width="115" height="127" frameX="-50" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0015" x="972" y="1" width="115" height="127" frameX="-50" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="holyshit0016" x="972" y="1" width="115" height="127" frameX="-50" frameY="-0" frameWidth="167" frameHeight="127"/>
+	<SubTexture name="idle0001" x="1" y="1" width="124" height="126" frameX="-0" frameY="-0" frameWidth="124" frameHeight="126"/>
+	<SubTexture name="idle0002" x="1" y="1" width="124" height="126" frameX="-0" frameY="-0" frameWidth="124" frameHeight="126"/>
+	<SubTexture name="idle0003" x="128" y="1" width="124" height="126" frameX="-0" frameY="-0" frameWidth="124" frameHeight="126"/>
+	<SubTexture name="idle0004" x="128" y="1" width="124" height="126" frameX="-0" frameY="-0" frameWidth="124" frameHeight="126"/>
+	<SubTexture name="idle0005" x="255" y="1" width="124" height="126" frameX="-0" frameY="-0" frameWidth="124" frameHeight="126"/>
+	<SubTexture name="idle0006" x="255" y="1" width="124" height="126" frameX="-0" frameY="-0" frameWidth="124" frameHeight="126"/>
+</TextureAtlas>

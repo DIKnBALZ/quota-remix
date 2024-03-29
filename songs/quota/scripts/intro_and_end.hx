@@ -16,6 +16,8 @@ function postCreate() {
 	add(_hate);
 
 	MusicBeatState.skipTransOut = true;
+
+	camZooming = true;
 }
 
 function onPostCountdown(event) {

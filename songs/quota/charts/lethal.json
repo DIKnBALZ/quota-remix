@@ -4,242 +4,250 @@
 			"params": [
 				1
 			],
-			"time": 0,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 0
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 3200,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 3200
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 6400,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 6400
 		},
 		{
 			"params": [
 				false,
 				false
 			],
-			"time": 6400,
-			"name": "cam_snap"
+			"name": "cam_snap",
+			"time": 6400
 		},
 		{
 			"params": [
 				true
 			],
-			"time": 6800,
-			"name": "look_at_her_go"
+			"name": "look_at_her_go",
+			"time": 6800
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 9600,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 9600
 		},
 		{
 			"params": [
 				true,
 				false
 			],
-			"time": 9600,
-			"name": "cam_snap"
+			"name": "cam_snap",
+			"time": 9600
 		},
 		{
 			"params": [
 				false,
 				false
 			],
-			"time": 11200,
-			"name": "cam_snap"
+			"name": "cam_snap",
+			"time": 11200
 		},
 		{
 			"params": [
 				false
 			],
-			"name": "look_at_her_go",
+			"time": 12800,
+			"name": "look_at_her_go"
+		},
+		{
+			"params": [
+				false,
+				true
+			],
+			"name": "cam_snap",
 			"time": 12800
 		},
 		{
 			"params": [
-				false,
-				true
-			],
-			"time": 12800,
-			"name": "cam_snap"
-		},
-		{
-			"params": [
 				1
 			],
-			"time": 19200,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 19200
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 25600,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 25600
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 28800,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 28800
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 38400,
-			"name": "Camera Movement"
-		},
-		{
-			"params": [
-				true
-			],
-			"time": 39600,
-			"name": "look_at_her_go"
-		},
-		{
-			"params": [
-				1
-			],
-			"time": 44800,
-			"name": "Camera Movement"
-		},
-		{
-			"params": [
-				0
-			],
-			"time": 51200,
-			"name": "Camera Movement"
-		},
-		{
-			"params": [
-				false
-			],
-			"time": 51200,
-			"name": "look_at_her_go"
+			"name": "Camera Movement",
+			"time": 38400
 		},
 		{
 			"params": [
 				true
 			],
 			"name": "look_at_her_go",
-			"time": 52400
+			"time": 39600
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 57600,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 44800
+		},
+		{
+			"params": [
+				0
+			],
+			"name": "Camera Movement",
+			"time": 51200
 		},
 		{
 			"params": [
 				false
 			],
 			"name": "look_at_her_go",
-			"time": 64000
+			"time": 51200
 		},
 		{
 			"params": [
-				0
+				true
 			],
-			"time": 65600,
-			"name": "Camera Movement"
-		},
-		{
-			"params": [
-				1
-			],
-			"time": 72000,
-			"name": "Camera Movement"
-		},
-		{
-			"params": [
-				0
-			],
-			"time": 78400,
-			"name": "Camera Movement"
+			"time": 52400,
+			"name": "look_at_her_go"
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 81600,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 57600
+		},
+		{
+			"params": [
+				false
+			],
+			"time": 64000,
+			"name": "look_at_her_go"
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 84800,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 65600
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 86400,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 72000
+		},
+		{
+			"params": [
+				0
+			],
+			"name": "Camera Movement",
+			"time": 78400
+		},
+		{
+			"params": [
+				1
+			],
+			"name": "Camera Movement",
+			"time": 81600
+		},
+		{
+			"params": [
+				0
+			],
+			"name": "Camera Movement",
+			"time": 84800
+		},
+		{
+			"params": [
+				1
+			],
+			"name": "Camera Movement",
+			"time": 86400
 		},
 		{
 			"params": [
 				175
 			],
-			"time": 91200,
-			"name": "BPM Change"
+			"name": "BPM Change",
+			"time": 91200
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 102171.428571429,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 102171.428571429
 		},
 		{
 			"params": [
 				true
 			],
-			"name": "look_at_her_go",
-			"time": 112800
+			"time": 112800,
+			"name": "look_at_her_go"
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 113142.857142857,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 113142.857142857
 		},
 		{
 			"params": [
 				0
 			],
-			"time": 124114.285714286,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 124114.285714286
+		},
+		{
+			"params": [
+				false
+			],
+			"name": "look_at_her_go",
+			"time": 124114.285714286
 		},
 		{
 			"params": [
 				1
 			],
-			"time": 125485.714285714,
-			"name": "Camera Movement"
+			"name": "Camera Movement",
+			"time": 125485.714285714
 		}
 	],
 	"scrollSpeed": 2.5,
-	"codenameChart": true,
 	"strumLines": [
 		{
+			"strumScale": 1,
+			"position": "dad",
 			"notes": [
 				{
 					"id": 1,
@@ -1466,21 +1474,21 @@
 					"type": 0
 				}
 			],
-			"position": "dad",
-			"strumScale": 1,
-			"visible": true,
-			"type": 0,
 			"characters": [
 				"quota-myo"
 			],
+			"type": 0,
+			"visible": true,
 			"strumPos": [
 				0,
 				50
 			],
-			"strumLinePos": 0.25,
-			"vocalsSuffix": "-myo"
+			"vocalsSuffix": "-myo",
+			"strumLinePos": 0.25
 		},
 		{
+			"strumScale": 1,
+			"position": "boyfriend",
 			"notes": [
 				{
 					"id": 3,
@@ -3091,21 +3099,20 @@
 					"type": 0
 				}
 			],
-			"position": "boyfriend",
-			"strumScale": 1,
-			"visible": true,
-			"type": 1,
 			"characters": [
-				"lcguy1"
+				"quota-wiz"
 			],
+			"type": 1,
+			"visible": true,
 			"strumPos": [
 				0,
 				50
 			],
-			"strumLinePos": 0.75,
-			"vocalsSuffix": "-wiz"
+			"vocalsSuffix": "-wiz",
+			"strumLinePos": 0.75
 		}
 	],
+	"codenameChart": true,
 	"stage": "lethal",
 	"noteTypes": [
 		"Ding",

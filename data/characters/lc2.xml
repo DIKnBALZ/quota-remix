@@ -1,9 +1,0 @@
-<!DOCTYPE codename-engine-character> <!-- Made with WizardMantis's Character Converter that was modified by inky lol -->
-<character isPlayer="false" x="0" y="0" icon="face" flipX="false" camx="-130" camy="330" holdTime="6.1" scale="1" color="#A1A1A1">
-	<anim name="idle" anim="idle_gb" fps="24" loop="false" x="60" y="-300"/>
-	<anim name="singLEFT" anim="left_posegB" fps="24" loop="false" x="100" y="-300"/>
-	<anim name="singUP" anim="up_posegB" fps="24" loop="false" x="40" y="-290"/>
-	<anim name="singDOWN" anim="down_posegB" fps="24" loop="false" x="50" y="-325"/>
-	<anim name="singRIGHT" anim="right_posegB" fps="24" loop="false" x="11" y="-320"/>
-	<anim name="ding" anim="ding_gB" fps="24" loop="false" x="60" y="-350"/>
-</character>
